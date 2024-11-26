@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat-r";
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+/* подключение шрифтов */
+@font-face {
+    font-family: "Montserrat-b";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-r";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-l";
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+.btn_to_top {
+    width: 50px;
+    height: 50px;
+    background-color: #47A6FF;
+    font-size: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* отступ */
+.my-100 {
+    margin-top: 120px;
+}
+
+/* контейнер */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 37px;
+    text-align: center;
+}
+
+/* header start */
+header {
+    background-color: #47A6FF;
+    height: 100px;
+}
+
+.header_menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header_menu .tel{
+    color: white;
+}
+
+.logo img{
+    width: 65px;
+    height: 65px;
+}
+
+.logo a{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn {
+    background-color: white;
+    width: 190px;
+    height: 37px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: "Montserrat-b";
+}
+
+.logo h4:hover {
+    transform: scale(1.02);
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.466);
+    transform: scale(1.02);
+}
+
+.header_menu .tel:hover {
+    transform: scale(1.02);
+}
+/* header end */
+
+
+/* banner start */
+.banner {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner_info{
+    font-size: 22px;
+    font-family: "Montserrat-b";
+}
+
+.banner .btn {
+    width: 210px;
+    height: 50px;
+    background-color: #47A6FF;
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.banner .btn:hover {
+    box-shadow: 0 0 10px #47A6FF;
+    color: black;
+}
+/* banner end */
+
+
+/* tours card start */
+.tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.filter {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.filter a {
+    color: black;
+}
+
+.filter span {
+    color: #47A6FF;
+}
+
+.filter a:hover {
+    color: #47A6FF;
+}
+
+.tours_card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 50px;
+    border-radius: 8px;
+    width: 325px;
+}
+
+.card img{
+    border-radius: 8px;
+    height: 200px;
+    width: 325px;
+    height: 200px;
+}
+
+.card_info {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card_info h4 {
+    font-size: 20px;
+}
+
+.card_info .price{
+    font-size: 25px;
+    font-weight: 700;
+    color: #47A6FF;
+    margin: 10px 0;
+}
+
+.card_info p {
+    font-weight: 590;
+    font-size: 16px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #47A6FF;
+    cursor: pointer;
+}
+/* tours card end */
+
+
+/* advantages start */
+.advantages {
+    margin-top: 100px;
+    border-top: 2px solid #47A6FF;
+    border-bottom: 2px solid #47A6FF;
+}
+
+.advantages h2 {
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.advantages_card {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.advantages_info {
+    padding: 10px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.advantages img {
+    width: 110px;
+    height: 110px;
+}
+
+.img_card img{
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.advantages_info p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.advantages_info:hover {
+    box-shadow: 0 0 10px #47A6FF;
+    border-radius: 8px;
+}
+/* advantages end */
+
+
+/* consultants start */
+.consultants {
+    margin-top: 150px;
+}
+
+.consultants_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.consultants img{
+    margin-bottom: 15px;
+    width: 200px;
+    height: 300px;
+}
+
+.consultants_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    height: 370px;
+}
+
+.consultants h2 {
+    margin: 10px 0;
+}
+
+.consultants p {
+    padding-left: 10px;
+}
+
+.consultants_card:hover {
+    box-shadow: 0 0 10px #47A6FF;
+    border-radius: 8px;
+}
+/* consultants end */
+
+
+/* reviews start */
+.reviews {
+    margin-top: 200px;
+}
+
+.reviews_info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.reviews_card {
+    border-radius: 8px;
+    padding: 20px;
+    width: 550px;
+    height: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #47A6FF;
+}
+
+.info_person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.star {
+    display: flex;
+    gap: 10px;
+}
+
+.info_person img {
+    width: 20px;
+    height: 20px;
+}
+
+.info_person p {
+    font-family: "Montserrat-b";
+    margin-bottom: 15px;
+}
+
+.reviews_info .btn {
+    margin-top: 20px;
+    background-color: #47A6FF;
+    color: white;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.elipse {
+    width: 20px;
+    height: 20px;
+    background-color: #47A6FF;
+    border: 2px solid #47A6FF;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.elipse1 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #47A6FF;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.elipse1:hover {
+    background-color: #47A6FF;
+}
+
+/* reviews end */
+
+
+/* reservation start */
+.reservation {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserv_form {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    gap: 50px;
+}
+
+.reserv_form img {
+    border-radius: 8px;
+    width: 500px;
+    height: 700px;
+}
+
+.form_reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.form_reservation h2 {
+    margin-left: -95px;
+    text-align: left;
+}
+
+form {
+    padding: 2px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 30px;
+}
+
+form p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+form input,
+textarea {
+    width: 400px;
+    height: 30px;
+    background-color: #cce6ff;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+.reservation .btn {
+    width: 250px;
+    height: 50px;
+    background-color: #47A6FF;
+    color: white;
+    font-size: 18px;
+}
+
+input:hover,
+textarea:hover {
+    box-shadow: 0 0 10px #47a6ffa3;
+}
+
+.reservation .btn:hover {
+    box-shadow: 0 0 8px #47A6FF;
+}
+/* reservations end */
+
+
+/* footer start */
+footer {
+    background-color: #47A6FF;
+    height: 100px;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer .logo {
+    margin-top: 20px;
+}
+
+.footer_c {
+    margin-top: 20px;
+    color: white;
+}
+/* footer end */

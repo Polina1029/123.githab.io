@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: "Montserrat-R";
+}
+
+
+/* Подключение шрифтов */
+@font-face {
+    font-family: "Montserrat-R";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-B";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+
+/* Контейнер */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+/* Отступы */
+.my-120 {
+    margin-top: 120px;
+}
+
+/* Кнопка наверх */
+.btn_to_top a {
+    width: 50px;
+    height: 50px;
+    background-color: #89BF11;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+/* header start */
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 5px #89BF11;
+    z-index: 999;
+    top: 0;
+    background-color: white;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 130px;
+    height: 50px;
+}
+
+header .btn {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    padding: 10px 8px;
+    border: 2px solid #89BF11;
+    border-radius: 3px;
+    color: black;
+    font-weight: 800;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 14.5px;
+}
+
+.contacts a {
+    color: #89BF11;
+}
+
+header .btn:hover {
+    background-color: #89BF11;
+    color: white;
+    box-shadow: 0 0 12px #89BF11;
+}
+
+/* header end */
+
+
+/* banner start */
+.banner {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.banner_info p {
+    margin: 25px 0 30px;
+    font-weight: 500;
+}
+
+.banner img {
+    width: 500px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.banner .btn,
+.catalog .btn,
+.call .btn {
+    background-color: #89BF11;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    padding: 10px 8px;
+    border: 2px solid #89BF11;
+    border-radius: 3px;
+    color: white;
+    font-weight: 800;
+}
+
+.banner .btn:hover,
+.catalog .btn:hover,
+.call .btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #89BF11;
+    color: black;
+    box-shadow: 0 0 8px #89BF11;
+}
+
+/* banner end */
+
+
+/* adventages start */
+.adventages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adventages_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.info {
+    padding: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adventages img {
+    width: 110px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.info:hover {
+    box-shadow: 0 0 8px #89BF11;
+    border-radius: 8px;
+}
+
+/* adventages end */
+
+
+/* catalog start */
+.filtering {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0 30px;
+}
+
+.btnf {
+    background-color: none;
+}
+
+.btn-filter {
+    font-family: "Montserrat-R";
+    color: #000; 
+    font-size: 15px;
+    background-color: transparent; 
+    border: none;
+    margin: 10px; 
+    cursor: pointer; 
+}
+
+.btn-filter:hover {  
+    color:  #89BF11; 
+    background-color: transparent;
+    font-weight: 700;
+    transition: 0.9s;
+}
+
+.btn-filter:active {  
+    color:  #89BF11;
+    font-weight: 700;
+}
+
+.btn-filter:focus {  
+    color:  #89BF11;
+    outline: none;
+    font-weight: 700;
+}
+
+.catalog_card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card {
+    width: 30%;
+    height: 100%;
+    border: 2px solid #89BF11;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 357px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.card_text {
+    padding: 15px;
+}
+
+.card_text h5 {
+    font-family: "Montserrat-B";
+    text-align: center;
+    font-size: 20px;
+}
+
+.card_text .price {
+    text-align: center;
+    font-weight: 700;
+    margin: 11px 0;
+    font-size: 22px;
+}
+
+.card_text h5 {
+    text-align: center;
+}
+
+.card_text p {
+    font-size: 14px;
+}
+
+.catalog .btn {
+    margin: 10px 0;
+}
+
+/* catalog end */
+
+
+/* reviews start */
+.reviwes_info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.reviwes_card {
+    border-radius: 8px;
+    padding: 20px;
+    width: 550px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #89BF11;
+}
+
+.info_person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.star {
+    display: flex;
+    margin-top: 12px;
+    gap: 10px;
+}
+
+.info_person img {
+    width: 20px;
+    height: 20px;
+}
+
+.info_person p {
+    font-family: "Montserrat-b";
+    margin-bottom: 15px;
+}
+
+.reviwes_info .btn {
+    margin-top: 20px;
+    background-color: #89BF11;
+    color: white;
+}
+
+.reviwes_card:hover {
+    transform: scale(1.02);
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.elipse {
+    width: 20px;
+    height: 20px;
+    background-color: #89BF11;
+    border: 2px solid #89BF11;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.elipse1 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #89BF11;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.elipse1:hover {
+    background-color: #89BF11;
+}
+
+/* reviews end */
+
+/* call start */
+.call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    gap: 50px;
+}
+
+.call img {
+    margin-top: 120px;
+    border-radius: 8px;
+    width: 350px;
+    height: 100%;
+}
+
+.form_call {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.form_call h2 {
+    margin-left: -20px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+input {
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 20px;
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #89BF11;
+    background-color: white;
+    outline: 0;
+}
+
+form p {
+    margin-top: 20px;
+}
+
+.call .btn {
+    margin-top: 30px;
+}
+
+input:hover {
+    box-shadow: 0 0 10px #89BF11;
+}
+
+/* call end */
+
+
+/* contacts start */
+.contacts_info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 18px;
+}
+
+.contacts_i .addres,
+.contacts_i .email,
+.contacts_i .time {
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.image_contacts img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: -2px;
+}
+
+.contacts_i .a,
+.contacts_i .e,
+.contacts_i .t {
+    font-weight: 700;
+}
+
+.map_img img {
+    width: 420px;
+    height: 100%;
+
+}
+
+/* contacts end */
+
+
+/* footer start */
+footer {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #88bf1177;
+    box-shadow: 0 0 10px #88bf1192;
+    z-index: -1;
+}
+/* footer end */
